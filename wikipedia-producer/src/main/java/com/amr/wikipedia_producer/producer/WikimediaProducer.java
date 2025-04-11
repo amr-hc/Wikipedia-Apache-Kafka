@@ -12,6 +12,6 @@ public class WikimediaProducer {
     private final KafkaTemplate<String,String> kafkaTemplate;
 
     public void sendMessage(String msg){
-        kafkaTemplate.send("quickstart-events", msg);
+        kafkaTemplate.send("wiki-media", msg);
     }
 }

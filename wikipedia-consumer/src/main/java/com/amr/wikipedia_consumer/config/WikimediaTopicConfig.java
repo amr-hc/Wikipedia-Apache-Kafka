@@ -9,6 +9,6 @@ import org.springframework.kafka.config.TopicBuilder;
 public class WikimediaTopicConfig {
     @Bean
     public NewTopic wikiMediaTopic(){
-        return TopicBuilder.name("quickstart-events").build();
+        return TopicBuilder.name("wiki-media").build();
     }
 }

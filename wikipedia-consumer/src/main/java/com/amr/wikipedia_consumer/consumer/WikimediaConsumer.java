@@ -28,7 +28,7 @@ public class WikimediaConsumer {
         return stream;
     }
 
-    @KafkaListener(topics = "quickstart-events", groupId = "my-consumer-group")
+    @KafkaListener(topics = "wiki-media", groupId = "my-consumer-group")
     public void listen(String message) {
         if (sink != null) {
             sink.next(message);
